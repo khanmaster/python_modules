@@ -24,7 +24,14 @@ with open("new_json_file.json") as jsonfile:
 
 # Json is used heavily in the industry so reading, writing, parsing and converting data are the most commonly utilised options
 
+# exception handling
 
+try # if
+except - # elif
+raise # elif send back the orginial exception #
+finally -  # like else but will execute regardless of the try and except
+
+# add the exception handling required blocks to check if the file is created if not return back the original exception together with customised user friendly message.
 
 
 
