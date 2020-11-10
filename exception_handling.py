@@ -1,8 +1,22 @@
+# We will have a look at the practical use cases and implementation of try, except, raise and finally
 
+we will create a variable to store a file data using open()
+Iteration 1
+try: # let's use try block for a 1 line of code where we know this will throw an error
+    file = open("orders.text")
+except:
+    print(" Panic Alert!!!! ")
 
+# Iteration 2
+try:
+    file = open("orders.text")
+except FileNotFoundError as errmsg: # creating an alais for FileNotFound Error in except block
+    print("Alert something sent wrong" + str(errmsg))
+# if we still wanted them to see the actual exception together with our customised message
+    raise # raise will send back the actual exception
 
-
-
+finally: # finally will execute regardless of the above conditions
+    print(" Hope you had a good Customer experience, please visit again")
 
 
 
